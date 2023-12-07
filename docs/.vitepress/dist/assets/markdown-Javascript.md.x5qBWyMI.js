@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as e}from"./chunks/framework.T1JPdAmG.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"markdown-Javascript.md","filePath":"markdown-Javascript.md"}'),r={name:"markdown-Javascript.md"};function o(s,c,n,p,d,i){return t(),e("div")}const f=a(r,[["render",o]]);export{_ as __pageData,f as default};
