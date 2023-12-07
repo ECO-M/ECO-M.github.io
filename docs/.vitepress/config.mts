@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/docs/',
+  base: '/myBlog/',
   title: "前端技术",
   description: "一个有趣、多元、详细的前端博客",
-  lastUpdated: true,
+  lastUpdated: false,
   themeConfig: {
     aside: true,
     docFooter: { prev: '上一页', next: '下一页' },
