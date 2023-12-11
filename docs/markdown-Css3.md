@@ -196,7 +196,7 @@ style-loader： 创建 style 标签，把 CSS 内容写入标签。<br>
 - imgs.offsetTop 是元素顶部距离文档顶部的高度（包括滚动条的距离）；
 - 内容达到显示区域的：img.offsetTop < window.innerHeight + document.body.scrollTop;
 
-![H5 图片](/images/zoom-in-crop-mark.webp)
+![H5 图片](./images/zoom-in-crop-mark.webp)
 
 ## z-index 属性在什么情况下会失效
 
@@ -355,7 +355,7 @@ vmax： vw 和 vh 中的较大值；<br>
 
 层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。下面是盒模型的层叠规则：
 
-![H5 图片](/images/zIndexcrop-mark.webp)
+![H5 图片](./images/zIndexcrop-mark.webp)
 
 对于上图，由上到下分别是：
 
