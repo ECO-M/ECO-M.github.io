@@ -149,7 +149,7 @@ console.log(Object.prototype.__proto__ === null) // true
 ````
 然而 null 究竟代表了什么呢？
 
-引用阮一峰老师的 《undefined与null的区别》 就是：
+引用阮一峰老师的 [《undefined与null的区别》](https://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html) 就是：
 
 > null 表示“没有对象”，即该处不应该有值。
  
