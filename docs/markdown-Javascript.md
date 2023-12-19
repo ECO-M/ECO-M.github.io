@@ -150,3 +150,41 @@ console.log(Object.prototype.__proto__ === null) // true
 然而 null 究竟代表了什么呢？
 
 引用阮一峰老师的 《undefined与null的区别》 就是：
+
+> null 表示“没有对象”，即该处不应该有值。
+ 
+所以 Object.prototype.__proto__ 的值为 null 跟 Object.prototype 没有原型，其实表达了一个意思。
+
+所以查找属性的时候查到 Object.prototype 就可以停止查找了。
+
+最后一张关系图也可以更新为：
+
+![H5 图片](./images/mark-prototypeEnd.png)
+
+顺便还要说一下，图中由相互关联的原型组成的链状结构就是原型链，也就是蓝色的这条线。
+
+### 补充
+---
+
+最后，补充三点大家可能不会注意的地方：
+
+#### constructor
+
+首先是 constructor 属性，我们看个例子：
+
+````
+function Person() {
+
+}
+var person = new Person();
+console.log(person.constructor === Person); // true
+````
+
+当获取 person.constructor 时，其实 person 中并没有 constructor 属性,当不能读取到constructor 属性时，会从 person 的原型也就是 Person.prototype 中读取，正好原型中有该属性，所以：
+
+````
+person.constructor === Person.prototype.constructor
+````
+
+#### \_\__proto\_\__
+其次是 __proto__ ，绝大部分浏览器都支持这个非标准的方法访问原型，然而它并不存在于 Person.prototype 中，实际上，它是来自于 Object.prototype ，与其说是一个属性，不如说是一个 getter/setter，当使用 obj.__proto__ 时，可以理解成返回了 Object.getPrototypeOf(obj)。

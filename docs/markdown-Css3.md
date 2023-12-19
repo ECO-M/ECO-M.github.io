@@ -69,7 +69,7 @@ box-sizing: <code>border-box</code>表示 IE 盒模型（怪异盒模型）<br>
 - 尽量使用<code>class</code>, 避免使用html标签选择
 - 少使用<code>后代</code>选择器, 后代选择器<code>开销高</code>
 - 避免对<code>可继承</code>的属性<code>重复</code>定义
-- 避免使用<code>通配</code>规则, 只对需要的元素进行处理`
+- 避免使用<code>通配</code>规则, 只对需要的元素进行处理
 
 #### 渲染性能：
 
