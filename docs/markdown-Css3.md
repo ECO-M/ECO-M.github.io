@@ -55,6 +55,25 @@ box-sizing: <code>border-box</code>表示 IE 盒模型（怪异盒模型）<br>
 ::: info 由于属性太多，这里只列举常见的可继承的属性
 :::
 
+不可继承：
+
+<code>display属性</code>
+
+<code>文本属性</code>：vertical-align、text-decoration
+
+<code>盒子模型的属性</code>: width、height、padding、margin、boder等
+
+<code>背景属性</code>：background-image、background-color、background-position等
+
+<code>定位属性</code>：float、clear、position、transform等
+
+<code>生成内容属性</code>: content、counter-reset、counter-increment
+
+<code>轮廓样式属性</code>: outline-style、outline-width、outline-color、outline
+
+::: info 由于属性太多，这里只列举常见的不可继承的属性
+:::
+
 ## CSS 优化和提高性能的方法有哪些？
 
 ####  加载性能：
